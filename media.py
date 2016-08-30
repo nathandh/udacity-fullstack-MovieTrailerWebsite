@@ -1,5 +1,15 @@
 import webbrowser
 
+"""
+Movie Trailers Website - Udacity Project #1
+--media.py MODULE--
+August 2016 - Initial iteration
+Developed by: Nathan Hernandez
+ver. 0.1
+
+###Utilizes TheMovieDB public API###
+"""
+
 class Video():
     """ This class is our base VIDEO class for all media """
     def __init__(self, video_title, video_duration):
@@ -16,7 +26,7 @@ class Movie(Video):
     def __init__(self, movie_title, movie_duration, movie_storyline,
                  poster_image, trailer_youtube):
         print("MOVIE child constructor called...")
-        Parent.__init__(self, movie_title, movie_duration)
+        Video.__init__(self, movie_title, movie_duration)
         self.storyline = movie_storyline
         self.poster_image_url = poster_image
         self.trailer_youtube_url = trailer_youtube
