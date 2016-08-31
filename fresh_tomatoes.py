@@ -19,6 +19,7 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: #9e9e9e;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -55,6 +56,25 @@ main_page_head = '''
             left: 0;
             top: 0;
             background-color: white;
+        }
+        /* Nathan added 08/30/16 */
+        .navbar-inverse .navbar-brand {
+            color: antiquewhite;
+	}
+        .navbar-brand,
+	.navbar-nav li a {
+	    line-height: 65px;
+	    height: 65px;
+	    padding-top: 0;
+	}
+        .navbar-inverse {
+            background-color: darkslategray;
+            background-image: none;
+            border-color: gray;
+        }
+        .navbar-brand > img {
+            width:50px;
+            height:50px;
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -107,7 +127,10 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh Tomatoes Movie Trailers</a>
+            <a class="navbar-brand" href="#">
+                <img alt="Fresh Tomatoes Logo" src="Tomato-78.png">
+                Fresh Tomatoes! Trailers
+            </a>
           </div>
         </div>
       </div>
